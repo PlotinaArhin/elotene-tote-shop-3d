@@ -79,7 +79,7 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105">
+          <button className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto max-w-xs sm:max-w-none">
             View All Products
           </button>
         </div>
