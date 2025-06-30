@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import ProductsSection from '../components/ProductsSection';
 import Cart from '../components/Cart';
 import Footer from '../components/Footer';
+import Chatbot from '../components/Chatbot';
 
 interface CartItem {
   id: number;
@@ -72,6 +73,8 @@ const Index = () => {
         onUpdateQuantity={updateQuantity}
         onRemoveItem={removeItem}
       />
+
+      <Chatbot />
     </div>
   );
 };

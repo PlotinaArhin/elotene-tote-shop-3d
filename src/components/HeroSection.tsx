@@ -1,5 +1,14 @@
 
+import { Link } from 'react-router-dom';
+
 const HeroSection = () => {
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById('products');
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 pt-20">
       <div className="container mx-auto px-4 py-12">
@@ -20,12 +29,18 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105 hover:shadow-lg">
+              <button 
+                onClick={scrollToProducts}
+                className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105 hover:shadow-lg"
+              >
                 Shop Collection
               </button>
-              <button className="border-2 border-amber-500 text-amber-600 px-8 py-4 rounded-full font-semibold hover:bg-amber-500 hover:text-white transition-all">
+              <Link 
+                to="/about"
+                className="border-2 border-amber-500 text-amber-600 px-8 py-4 rounded-full font-semibold hover:bg-amber-500 hover:text-white transition-all text-center"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
 
             {/* Stats */}
@@ -54,13 +69,7 @@ const HeroSection = () => {
                   className="w-full h-full" 
                   frameBorder="0" 
                   allowFullScreen 
-                  mozallowfullscreen="true" 
-                  webkitallowfullscreen="true" 
                   allow="autoplay; fullscreen; xr-spatial-tracking" 
-                  xr-spatial-tracking="true"
-                  execution-while-out-of-viewport="true" 
-                  execution-while-not-rendered="true" 
-                  web-share="true"
                   src="https://sketchfab.com/models/d2d8c531581940f398fa56ab1fba3481/embed?autostart=1&ui_theme=light&ui_hint=0&ui_infos=0&ui_inspector=0&ui_stop=0&ui_watermark=0&ui_watermark_link=0"
                 />
               </div>
