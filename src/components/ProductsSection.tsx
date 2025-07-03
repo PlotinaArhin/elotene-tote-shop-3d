@@ -1,5 +1,11 @@
 
 import ProductCard from './ProductCard';
+import classicTote from '../assets/canvas-tote-classic.jpg';
+import leatherTote from '../assets/leather-canvas-tote.jpg';
+import juteTote from '../assets/jute-canvas-tote.jpg';
+import designerTote from '../assets/designer-print-tote.jpg';
+import minimalistTote from '../assets/minimalist-white-tote.jpg';
+import vintageTote from '../assets/vintage-red-tote.jpg';
 
 interface Product {
   id: number;
@@ -20,39 +26,39 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
       name: "Classic Canvas Tote",
       price: 49.99,
       originalPrice: 59.99,
-      image: "/placeholder.svg?height=300&width=300&text=Canvas+Tote"
+      image: classicTote
     },
     {
       id: 2,
       name: "Premium Leather Tote",
       price: 89.99,
-      image: "/placeholder.svg?height=300&width=300&text=Leather+Tote"
+      image: leatherTote
     },
     {
       id: 3,
       name: "Eco-Friendly Jute Bag",
       price: 34.99,
       originalPrice: 44.99,
-      image: "/placeholder.svg?height=300&width=300&text=Jute+Bag"
+      image: juteTote
     },
     {
       id: 4,
       name: "Designer Print Tote",
       price: 64.99,
-      image: "/placeholder.svg?height=300&width=300&text=Designer+Tote"
+      image: designerTote
     },
     {
       id: 5,
       name: "Minimalist Tote",
       price: 39.99,
-      image: "/placeholder.svg?height=300&width=300&text=Minimalist+Tote"
+      image: minimalistTote
     },
     {
       id: 6,
       name: "Vintage Style Bag",
       price: 54.99,
       originalPrice: 69.99,
-      image: "/placeholder.svg?height=300&width=300&text=Vintage+Bag"
+      image: vintageTote
     }
   ];
 
