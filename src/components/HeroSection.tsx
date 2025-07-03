@@ -10,7 +10,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 pt-20">
+    <section id="home" className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50 pt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}

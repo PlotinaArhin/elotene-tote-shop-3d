@@ -54,7 +54,7 @@ const Index = () => {
   const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Header 
         cartCount={cartCount} 
         onCartClick={() => setIsCartOpen(true)} 
