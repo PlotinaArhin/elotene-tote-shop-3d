@@ -62,7 +62,7 @@ const Cart = ({ isOpen, onClose, items, onUpdateQuantity, onRemoveItem }: CartPr
                     
                     <div className="flex-1">
                       <h3 className="font-semibold text-gray-800">{item.name}</h3>
-                      <p className="text-amber-600 font-bold">${item.price}</p>
+                      <p className="text-amber-600 font-bold">₵{item.price}</p>
                     </div>
 
                     <div className="flex items-center space-x-2">
@@ -98,7 +98,7 @@ const Cart = ({ isOpen, onClose, items, onUpdateQuantity, onRemoveItem }: CartPr
             <div className="border-t border-gray-200 p-6 space-y-4">
               <div className="flex justify-between items-center text-xl font-bold">
                 <span>Total:</span>
-                <span className="text-amber-600">${total.toFixed(2)}</span>
+                <span className="text-amber-600">₵{total.toFixed(2)}</span>
               </div>
               
               <button className="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-4 rounded-full font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105">

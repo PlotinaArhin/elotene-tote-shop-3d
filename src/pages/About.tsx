@@ -14,7 +14,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-5xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent mb-6">
-                About Elotene
+                About Eloténe
               </h1>
               <p className="text-xl text-gray-700 leading-relaxed">
                 Crafting sustainable, stylish tote bags for the conscious consumer. 
@@ -31,11 +31,11 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Elotene was born from a simple belief: that everyday accessories should be both beautiful and responsible. 
+                  Eloténe was born from a simple belief: that everyday accessories should be both beautiful and responsible. 
                   Founded in 2020, we started with a mission to create tote bags that would last a lifetime while minimizing our environmental impact.
                 </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Every Elotene bag is carefully crafted using sustainable materials sourced from ethical suppliers. 
+                  Every Eloténe bag is carefully crafted using sustainable materials sourced from ethical suppliers. 
                   We work directly with artisans who share our commitment to quality and environmental stewardship.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
@@ -114,7 +114,7 @@ const About = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                The passionate individuals behind Elotene who make it all possible.
+                The passionate individuals behind Eloténe who make it all possible.
               </p>
             </div>
             

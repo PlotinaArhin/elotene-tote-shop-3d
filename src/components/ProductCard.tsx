@@ -42,9 +42,9 @@ const ProductCard = ({ id, name, price, originalPrice, image, onAddToCart }: Pro
         
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-amber-600">${price}</span>
+            <span className="text-2xl font-bold text-amber-600">₵{price}</span>
             {originalPrice && (
-              <span className="text-lg text-gray-400 line-through">${originalPrice}</span>
+              <span className="text-lg text-gray-400 line-through">₵{originalPrice}</span>
             )}
           </div>
         </div>

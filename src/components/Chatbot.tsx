@@ -14,7 +14,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hi! I'm your Elotene assistant. I can help you learn about our sustainable tote bags, answer questions about our products, or assist with your shopping experience. How can I help you today?",
+      text: "Hi! I'm your Eloténe assistant. I can help you learn about our sustainable tote bags, answer questions about our products, or assist with your shopping experience. How can I help you today?",
       isUser: false,
       timestamp: new Date()
     }
@@ -23,28 +23,28 @@ const Chatbot = () => {
 
   const predefinedResponses = {
     greeting: [
-      "Hello! Welcome to Elotene. How can I assist you with our sustainable tote bags today?",
+      "Hello! Welcome to Eloténe. How can I assist you with our sustainable tote bags today?",
       "Hi there! I'm here to help you find the perfect eco-friendly tote bag. What would you like to know?",
-      "Welcome to Elotene! I'd love to help you explore our collection of premium tote bags."
+      "Welcome to Eloténe! I'd love to help you explore our collection of premium tote bags."
     ],
     products: [
-      "We offer 6 amazing tote bags including our Classic Canvas Tote ($49.99), Premium Leather Tote ($89.99), and Eco-Friendly Jute Bag ($34.99). Each bag is crafted with sustainable materials and designed to last. Would you like details about any specific bag?",
-      "Our collection features sustainable tote bags ranging from $34.99 to $89.99. We have canvas, leather, jute, and designer options. All are made with eco-friendly materials. What style interests you most?"
+      "We offer 6 amazing tote bags including our Classic Canvas Tote (₵49.99), Premium Leather Tote (₵89.99), and Eco-Friendly Jute Bag (₵34.99). Each bag is crafted with sustainable materials and designed to last. Would you like details about any specific bag?",
+      "Our collection features sustainable tote bags ranging from ₵34.99 to ₵89.99. We have canvas, leather, jute, and designer options. All are made with eco-friendly materials. What style interests you most?"
     ],
     sustainability: [
       "Sustainability is at the heart of everything we do! We use eco-friendly materials, work with ethical suppliers, and ensure our production methods minimize environmental impact. Our bags are built to last, reducing waste over time.",
-      "Great question! All Elotene bags are made from sustainable materials like organic cotton, recycled materials, and ethically-sourced leather. We're committed to protecting our planet while creating beautiful, functional bags."
+      "Great question! All Eloténe bags are made from sustainable materials like organic cotton, recycled materials, and ethically-sourced leather. We're committed to protecting our planet while creating beautiful, functional bags."
     ],
     shipping: [
       "We offer fast and reliable shipping! Standard delivery takes 3-5 business days, and we also offer express shipping for faster delivery. All orders come with tracking information so you can monitor your package.",
       "Shipping is quick and easy! We process orders within 24 hours and provide tracking details. Standard shipping is 3-5 days, with express options available for urgent orders."
     ],
     about: [
-      "Elotene was founded in 2020 with a mission to create sustainable, stylish tote bags. We believe in quality materials, timeless designs, and ethical production. Our team is passionate about environmental stewardship and creating products that last.",
+      "Eloténe was founded in 2020 with a mission to create sustainable, stylish tote bags. We believe in quality materials, timeless designs, and ethical production. Our team is passionate about environmental stewardship and creating products that last.",
       "We're a sustainability-focused company that creates premium tote bags. Founded on values of quality, eco-friendliness, and ethical business practices, we work with artisans who share our commitment to the environment."
     ],
     default: [
-      "I'd be happy to help! You can ask me about our products, sustainability practices, shipping, or anything else about Elotene. What would you like to know?",
+      "I'd be happy to help! You can ask me about our products, sustainability practices, shipping, or anything else about Eloténe. What would you like to know?",
       "I'm here to assist with any questions about our tote bags, company, or shopping experience. Feel free to ask me anything!",
       "Thanks for your question! I can help with product information, company details, shipping, or general inquiries. What specific information are you looking for?"
     ]
@@ -69,7 +69,7 @@ const Chatbot = () => {
       return predefinedResponses.shipping[Math.floor(Math.random() * predefinedResponses.shipping.length)];
     }
     
-    if (message.includes('about') || message.includes('company') || message.includes('story') || message.includes('elotene')) {
+    if (message.includes('about') || message.includes('company') || message.includes('story') || message.includes('elotene') || message.includes('eloténe')) {
       return predefinedResponses.about[Math.floor(Math.random() * predefinedResponses.about.length)];
     }
     
@@ -123,7 +123,7 @@ const Chatbot = () => {
         <div className="fixed bottom-24 right-6 w-80 h-96 bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col z-50">
           {/* Header */}
           <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white p-4 rounded-t-lg">
-            <h3 className="font-semibold">Elotene Assistant</h3>
+            <h3 className="font-semibold">Eloténe Assistant</h3>
             <p className="text-sm opacity-90">Ask me anything about our tote bags!</p>
           </div>
 

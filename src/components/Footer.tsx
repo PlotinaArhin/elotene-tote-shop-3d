@@ -13,7 +13,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-sm">E</span>
               </div>
               <h3 className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
-                Elotene
+                Eloténe
               </h3>
             </div>
             <p className="text-gray-400 max-w-sm">
@@ -83,7 +83,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Elotene. All rights reserved.
+            © 2024 Eloténe. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
