@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+import heroImage from '../assets/hero-tote-bags.jpg';
 
 const HeroSection = () => {
   const scrollToProducts = () => {
@@ -60,19 +61,14 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - 3D Animation */}
+          {/* Right Content - Hero Image */}
           <div className="relative">
-            <div className="rounded-3xl overflow-hidden transform hover:scale-105 transition-transform duration-500">
-              <div className="aspect-square">
-                <iframe 
-                  title="Tote Bag" 
-                  className="w-full h-full" 
-                  frameBorder="0" 
-                  allowFullScreen 
-                  allow="autoplay; fullscreen; xr-spatial-tracking" 
-                  src="https://sketchfab.com/models/d2d8c531581940f398fa56ab1fba3481/embed?autostart=1&transparent=1&ui_theme=light&ui_hint=0&ui_infos=0&ui_inspector=0&ui_stop=0&ui_watermark=0&ui_watermark_link=0&camera=0"
-                />
-              </div>
+            <div className="rounded-3xl overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
+              <img 
+                src={heroImage}
+                alt="Premium sustainable tote bags" 
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Floating elements */}
