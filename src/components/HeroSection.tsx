@@ -62,7 +62,7 @@ const HeroSection = () => {
 
           {/* Right Content - 3D Animation */}
           <div className="relative">
-            <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500">
+            <div className="rounded-3xl overflow-hidden transform hover:scale-105 transition-transform duration-500">
               <div className="aspect-square">
                 <iframe 
                   title="Tote Bag" 
@@ -70,7 +70,7 @@ const HeroSection = () => {
                   frameBorder="0" 
                   allowFullScreen 
                   allow="autoplay; fullscreen; xr-spatial-tracking" 
-                  src="https://sketchfab.com/models/d2d8c531581940f398fa56ab1fba3481/embed?autostart=1&ui_theme=light&ui_hint=0&ui_infos=0&ui_inspector=0&ui_stop=0&ui_watermark=0&ui_watermark_link=0"
+                  src="https://sketchfab.com/models/d2d8c531581940f398fa56ab1fba3481/embed?autostart=1&transparent=1&ui_theme=light&ui_hint=0&ui_infos=0&ui_inspector=0&ui_stop=0&ui_watermark=0&ui_watermark_link=0&autospin=0.25&camera=0"
                 />
               </div>
             </div>
