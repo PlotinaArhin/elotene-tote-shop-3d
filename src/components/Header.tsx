@@ -15,16 +15,16 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm fixed w-full top-0 z-50 border-b border-amber-100">
+    <header className="bg-background/95 backdrop-blur-sm fixed w-full top-0 z-50 border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-warm rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">E</span>
             </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-              Eloténe
+            <h1 className="text-2xl font-script font-semibold text-primary">
+              eloténe
             </h1>
           </Link>
 
@@ -32,30 +32,30 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
           <nav className="hidden md:flex space-x-8">
             <Link 
               to="/" 
-              className={`text-gray-700 hover:text-amber-600 transition-colors font-medium ${
-                isActive('/') ? 'text-amber-600' : ''
+              className={`text-foreground hover:text-primary transition-colors font-medium ${
+                isActive('/') ? 'text-primary' : ''
               }`}
             >
               Home
             </Link>
             <a 
               href="/#products" 
-              className="text-gray-700 hover:text-amber-600 transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Products
             </a>
             <Link 
               to="/about" 
-              className={`text-gray-700 hover:text-amber-600 transition-colors font-medium ${
-                isActive('/about') ? 'text-amber-600' : ''
+              className={`text-foreground hover:text-primary transition-colors font-medium ${
+                isActive('/about') ? 'text-primary' : ''
               }`}
             >
               About
             </Link>
             <Link 
               to="/contact" 
-              className={`text-gray-700 hover:text-amber-600 transition-colors font-medium ${
-                isActive('/contact') ? 'text-amber-600' : ''
+              className={`text-foreground hover:text-primary transition-colors font-medium ${
+                isActive('/contact') ? 'text-primary' : ''
               }`}
             >
               Contact
@@ -66,11 +66,11 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
           <div className="flex items-center space-x-4">
             <button
               onClick={onCartClick}
-              className="relative p-2 text-gray-700 hover:text-amber-600 transition-colors"
+              className="relative p-2 text-foreground hover:text-primary transition-colors"
             >
               <ShoppingBag size={24} />
               {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-amber-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   {cartCount}
                 </span>
               )}
@@ -79,7 +79,7 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 text-gray-700 hover:text-amber-600 transition-colors"
+              className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -88,12 +88,12 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-amber-100 pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-3">
               <Link 
                 to="/" 
-                className={`text-gray-700 hover:text-amber-600 transition-colors font-medium ${
-                  isActive('/') ? 'text-amber-600' : ''
+                className={`text-foreground hover:text-primary transition-colors font-medium ${
+                  isActive('/') ? 'text-primary' : ''
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -101,15 +101,15 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
               </Link>
               <a 
                 href="/#products" 
-                className="text-gray-700 hover:text-amber-600 transition-colors font-medium"
+                className="text-foreground hover:text-primary transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Products
               </a>
               <Link 
                 to="/about" 
-                className={`text-gray-700 hover:text-amber-600 transition-colors font-medium ${
-                  isActive('/about') ? 'text-amber-600' : ''
+                className={`text-foreground hover:text-primary transition-colors font-medium ${
+                  isActive('/about') ? 'text-primary' : ''
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -117,8 +117,8 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
               </Link>
               <Link 
                 to="/contact" 
-                className={`text-gray-700 hover:text-amber-600 transition-colors font-medium ${
-                  isActive('/contact') ? 'text-amber-600' : ''
+                className={`text-foreground hover:text-primary transition-colors font-medium ${
+                  isActive('/contact') ? 'text-primary' : ''
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

@@ -63,14 +63,14 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
   ];
 
   return (
-    <section id="products" className="py-20 bg-white">
+    <section id="products" className="py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Our <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Collection</span>
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Our <span className="font-script text-primary text-5xl">Collection</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover our carefully curated selection of premium tote bags, each designed with sustainability and style in mind.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Discover our carefully curated selection of handcrafted tote bags, each featuring authentic African kente patterns and traditional craftsmanship.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto max-w-xs sm:max-w-none">
+          <button className="bg-gradient-warm text-primary-foreground px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:opacity-90 transition-all transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto max-w-xs sm:max-w-none">
             View All Products
           </button>
         </div>

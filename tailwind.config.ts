@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'script': ['Dancing Script', 'cursive'],
+				'sans': ['Poppins', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom Eloténe brand colors
+				elotene: {
+					orange: 'hsl(var(--elotene-orange))',
+					green: 'hsl(var(--elotene-green))',
+					gold: 'hsl(var(--elotene-gold))',
+				},
+				kente: {
+					red: 'hsl(var(--kente-red))',
+				},
+				denim: {
+					blue: 'hsl(var(--denim-blue))',
 				}
+			},
+			backgroundImage: {
+				'gradient-kente': 'var(--gradient-kente)',
+				'gradient-warm': 'var(--gradient-warm)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
