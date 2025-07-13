@@ -1,9 +1,9 @@
 
 import ProductCard from './ProductCard';
-import classicTote from '../assets/canvas-tote-classic.jpg';
+import orangeKenteTote from '../assets/elotene-orange-kente-tote.jpg';
+import denimPatchworkTote from '../assets/elotene-denim-patchwork-tote.jpg';
+import darkKenteTote from '../assets/elotene-dark-kente-tote.jpg';
 import leatherTote from '../assets/leather-canvas-tote.jpg';
-import juteTote from '../assets/jute-canvas-tote.jpg';
-import designerTote from '../assets/designer-print-tote.jpg';
 import minimalistTote from '../assets/minimalist-white-tote.jpg';
 import vintageTote from '../assets/vintage-red-tote.jpg';
 
@@ -23,29 +23,29 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
   const products: Product[] = [
     {
       id: 1,
-      name: "Classic Canvas Tote",
-      price: 49.99,
-      originalPrice: 59.99,
-      image: classicTote
+      name: "Eloténe Orange Kente Tote",
+      price: 64.99,
+      originalPrice: 79.99,
+      image: orangeKenteTote
     },
     {
       id: 2,
-      name: "Premium Leather Tote",
-      price: 89.99,
-      image: leatherTote
+      name: "Eloténe Denim Patchwork Tote",
+      price: 69.99,
+      image: denimPatchworkTote
     },
     {
       id: 3,
-      name: "Eco-Friendly Jute Bag",
-      price: 34.99,
-      originalPrice: 44.99,
-      image: juteTote
+      name: "Eloténe Dark Kente Tote",
+      price: 59.99,
+      originalPrice: 74.99,
+      image: darkKenteTote
     },
     {
       id: 4,
-      name: "Designer Print Tote",
-      price: 64.99,
-      image: designerTote
+      name: "Premium Leather Tote",
+      price: 89.99,
+      image: leatherTote
     },
     {
       id: 5,
