@@ -1,8 +1,5 @@
-
 import ProductCard from './ProductCard';
-import orangeKenteTote from '../assets/elotene-orange-kente-tote.jpg';
-import denimPatchworkTote from '../assets/elotene-denim-patchwork-tote.jpg';
-import darkGreenKenteTote from '../assets/elotene-dark-green-kente-tote.jpg';
+import orangeKenteTote from '../assets/elotene-orange-brown-kente-tote.jpg';
 
 interface Product {
   id: number;
@@ -30,14 +27,14 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
       name: "Eloténe Denim Patchwork Tote",
       price: 79.99,
       originalPrice: 94.99,
-      image: denimPatchworkTote
+      image: "/placeholder.svg"
     },
     {
       id: 3,
       name: "Eloténe Dark Green Kente Tote",
       price: 72.99,
       originalPrice: 87.99,
-      image: darkGreenKenteTote
+      image: "/placeholder.svg"
     }
   ];
 
