@@ -2,7 +2,7 @@
 import ProductCard from './ProductCard';
 import orangeKenteTote from '../assets/elotene-orange-kente-tote.jpg';
 import denimPatchworkTote from '../assets/elotene-denim-patchwork-tote.jpg';
-import forestGreenTote from '../assets/elotene-forest-green-tote.jpg';
+import orangeBrownKenteTote from '../assets/elotene-orange-brown-kente-tote.jpg';
 import leatherTote from '../assets/leather-canvas-tote.jpg';
 import minimalistTote from '../assets/minimalist-white-tote.jpg';
 import vintageTote from '../assets/vintage-red-tote.jpg';
@@ -36,10 +36,10 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
     },
     {
       id: 3,
-      name: "Eloténe Forest Green Tote",
-      price: 69.99,
-      originalPrice: 84.99,
-      image: forestGreenTote
+      name: "Eloténe Orange Brown Kente Tote",
+      price: 74.99,
+      originalPrice: 89.99,
+      image: orangeBrownKenteTote
     },
     {
       id: 4,
