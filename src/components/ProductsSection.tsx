@@ -2,10 +2,7 @@
 import ProductCard from './ProductCard';
 import orangeKenteTote from '../assets/elotene-orange-kente-tote.jpg';
 import denimPatchworkTote from '../assets/elotene-denim-patchwork-tote.jpg';
-import orangeBrownKenteTote from '../assets/elotene-orange-brown-kente-tote.jpg';
-import leatherTote from '../assets/leather-canvas-tote.jpg';
-import minimalistTote from '../assets/minimalist-white-tote.jpg';
-import vintageTote from '../assets/vintage-red-tote.jpg';
+import darkGreenKenteTote from '../assets/elotene-dark-green-kente-tote.jpg';
 
 interface Product {
   id: number;
@@ -24,34 +21,23 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
     {
       id: 1,
       name: "Eloténe Orange Kente Tote",
-      price: 64.99,
-      originalPrice: 79.99,
+      price: 74.99,
+      originalPrice: 89.99,
       image: orangeKenteTote
     },
     {
       id: 2,
       name: "Eloténe Denim Patchwork Tote",
-      price: 69.99,
+      price: 79.99,
+      originalPrice: 94.99,
       image: denimPatchworkTote
     },
     {
       id: 3,
-      name: "Eloténe Orange Brown Kente Tote",
-      price: 74.99,
-      originalPrice: 89.99,
-      image: orangeBrownKenteTote
-    },
-    {
-      id: 4,
-      name: "Premium Leather Tote",
-      price: 89.99,
-      image: leatherTote
-    },
-    {
-      id: 5,
-      name: "Minimalist Tote",
-      price: 39.99,
-      image: minimalistTote
+      name: "Eloténe Dark Green Kente Tote",
+      price: 72.99,
+      originalPrice: 87.99,
+      image: darkGreenKenteTote
     }
   ];
 
