@@ -68,6 +68,14 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
             >
               Returns
             </Link>
+            <Link 
+              to="/shipping-policy" 
+              className={`text-foreground hover:text-primary transition-colors font-medium ${
+                isActive('/shipping-policy') ? 'text-primary' : ''
+              }`}
+            >
+              Shipping
+            </Link>
           </nav>
 
           {/* Cart and Mobile Menu */}
@@ -140,6 +148,15 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Returns
+              </Link>
+              <Link 
+                to="/shipping-policy" 
+                className={`text-foreground hover:text-primary transition-colors font-medium ${
+                  isActive('/shipping-policy') ? 'text-primary' : ''
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Shipping
               </Link>
             </div>
           </nav>
