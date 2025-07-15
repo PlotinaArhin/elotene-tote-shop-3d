@@ -60,6 +60,14 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
             >
               Contact
             </Link>
+            <Link 
+              to="/returns-policy" 
+              className={`text-foreground hover:text-primary transition-colors font-medium ${
+                isActive('/returns-policy') ? 'text-primary' : ''
+              }`}
+            >
+              Returns
+            </Link>
           </nav>
 
           {/* Cart and Mobile Menu */}
@@ -123,6 +131,15 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
+              </Link>
+              <Link 
+                to="/returns-policy" 
+                className={`text-foreground hover:text-primary transition-colors font-medium ${
+                  isActive('/returns-policy') ? 'text-primary' : ''
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Returns
               </Link>
             </div>
           </nav>
