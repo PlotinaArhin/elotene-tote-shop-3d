@@ -38,10 +38,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4 text-amber-400">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><a href="#products" className="text-gray-400 hover:text-white transition-colors">Products</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Size Guide</a></li>
             </ul>
           </div>
@@ -50,11 +50,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4 text-amber-400">Customer Service</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Shipping Info</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Returns</a></li>
+              <li><Link to="/shipping-policy" className="text-gray-400 hover:text-white transition-colors">Shipping Info</Link></li>
+              <li><Link to="/returns-policy" className="text-gray-400 hover:text-white transition-colors">Returns</Link></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Track Order</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Support</a></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Support</Link></li>
             </ul>
           </div>
 
@@ -89,7 +89,7 @@ const Footer = () => {
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
             <Link to="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+            <Link to="/cookie-policy" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>
